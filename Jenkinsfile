@@ -6,9 +6,9 @@ pipeline {
     stage("Verify Tooling") {
       steps {
         sh '''
-          /usr/bin/docker info
-          /usr/bin/docker version
-          /usr/bin/docker compose version
+          sudo /usr/bin/docker info
+          sudo /usr/bin/docker version
+          sudo /usr/bin/docker compose version
         '''
       }
     }
