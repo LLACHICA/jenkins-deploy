@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'mediasrv'
+  }
   stages {
     stage("Verify Tooling") {
       steps {
